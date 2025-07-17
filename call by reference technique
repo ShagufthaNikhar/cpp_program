@@ -1,0 +1,19 @@
+Write a C++ program to swap 2 values by writing a function that uses call by reference technique.
+
+#include<iostream>
+ using namespace std;
+ void swap(int &x, int &y)
+ {
+ int swap;
+ swap=x;
+ x=y;
+ y=swap;
+ }
+ int main()
+ {
+ int x=500, y=100;
+ swap(x, y); // pass by reference
+ cout<<"Value of x is: "<<x<<endl;
+ cout<<"Value of y is: "<<y<<endl;
+ return 0;
+ }
